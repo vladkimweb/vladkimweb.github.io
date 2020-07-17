@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Владислав Ким</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <header id="header">
+    <a href="#" class="logo">Владислав Ким</a>
+    <ul>
+      <li><a href="#home"  onclick="toggle()">Главная</a></li>
+      <li><a href="#about" onclick="toggle()">Обо мне</a></li>
+      <li><a href="#services" onclick="toggle()">Услуги</a></li>
+      <li><a href="#portfolio" onclick="toggle()">Портфолио</a></li>
+    </ul>
+    <div class="toggle" onclick="toggle()"></div>
+  </header>
+  <section id="home">
+    <div>
+      <h2>Привет!</h2>
+      <p>Тебе нужен сайт? Тогда ты обратился по адресу!</p>
+      <a href="tel:+79858981828">+7 (985) 898 18 28</a>
+      <a href="mailto:vladis.kim3@gmail.com">vladis.kim3@gmail.com</a>
+    </div>
+    <img src="img/cat.jpg" alt="Фотография">
+  </section>
+  <section id="about">
+    <div>
+      <h2>Обо мне</h2>
+      <p>Меня зовут Владислав, я практикуюсь в верстке сайтов на html и css,
+        и параллельно учу JavaScript. Обучаюсь на 3-м курсе
+        "Информационные системы и технологии" в НИУ МГСУ.
+        Моя мечта - стать профессионалом в понравившемся мне направлении.</p>
+    </div>
+  </section>
+  <section id="services">
+    <div>
+      <h2>Мои услуги</h2>
+      <p>Создание кроссплатформенного, адаптивного сайта</p>
+      <p>Поддержка сайта</p>
+    </div>
+  </section>
+  <section id="portfolio">
+    <div>
+      <h2>Моё портфолио</h2>
+      <p>Здесь Вы можете посмотреть на мои работы.</p>
+      <a href="https://vladislav-kim-web.github.io/joocha_arts/">Пример 1</a>
+      <a href="https://vladislav-kim-web.github.io/joocha-arts/">Пример 2</a>
+    </div>
+  </section>
+  <script>
+    function toggle() {
+      let header = document.getElementById('header')
+      header.classList.toggle('active') /*    toggle ( String [, Boolean])
+        Если класс у элемента отсутствует - добавляет, иначе - убирает.
+        Когда вторым параметром передано false - удаляет указанный класс, а если true - добавляет.
+        Если вторым параметром передан undefined или переменная с typeof == 'undefined',
+        поведение будет аналогичным передаче только первого параметра при вызове toggle.*/
+    }
+  </script>
+</body>
+</html>

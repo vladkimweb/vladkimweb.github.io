@@ -1,0 +1,106 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /*плавный скролл при переходе из меню*/
+  font-family: 'Arial', sans-serif;
+}
+header
+{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111111;
+  z-index: 1000;
+}
+header .logo
+{
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+header ul
+{
+  position: relative;
+  display: flex;
+  transition: 0.5s; /*задержка анимации*/
+}
+header ul li
+{
+  position: relative;
+  list-style: none;
+}
+header ul li a
+{
+  position: relative;
+  padding: 5px 10px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+header ul li a.active,
+header ul li a:hover
+{
+  background: #205aff;
+}
+.toggle{
+  display: none;
+}
+section
+{
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 150px 100px 100px;
+}
+section img
+{
+  max-width: 350px;
+}
+section h2
+{
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+section p
+{
+  font-size: 18px;
+}
+section a
+{
+  outline: none;
+  display: inline-block;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  background: #111;
+  color: #fff;
+  margin-top: 20px;
+}
+#portfolio a
+{
+  outline: none;
+  display: inline-block;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  background: #fff;
+  color: #111;
+  margin-top: 20px;
+}
+section:nth-child(odd) /*CSS псевдокласс  :nth-child() находит один или более элементов,
+основываясь на их позиции среди группы соседних элементов. even - чет, odd нечет*/
+{
+  background: #111111;
+  color: #ffffff;
+}
