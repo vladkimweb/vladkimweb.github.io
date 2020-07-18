@@ -1,3 +1,11 @@
+@media (max-width:1400px) {
+  .bannerText h2 {
+    font-size: 2em;
+  }
+  .bannerText h3 {
+    font-size: 1em;
+  }
+}
 @media (max-width: 992px)
 {
   header ul
@@ -81,10 +89,31 @@
     justify-content: center;
     display: flex;
   }
-  section img
+  .photo
   {
-    margin-top: 30px;
+    opacity: 1;
+    position: relative;
+    right: 0;
+    transform: translateY(0);
     max-width: 100%;
+    margin-top: 30px;
+  }
+  .bannerText
+  {
+    position: relative;
+    left: 0;
+    transform: translateY(0);
+  }
+  #home
+  {
+    display: flex;
+  }
+  header ul li:nth-child(1),
+  header ul li:nth-child(2),
+  header ul li:nth-child(3),
+  header ul li:nth-child(4)
+  {
+    animation-delay: 0s !important;
   }
 }
 @media (max-width: 520px) {
