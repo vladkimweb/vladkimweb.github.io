@@ -111,14 +111,13 @@ section a
   padding: 8px 10px;
   text-decoration: none;
   font-size: 18px;
+  /*
   background: #fff;
+  */
   color: #111;
   margin-top: 20px;
 }
-a + a
-{
-  margin-left: 15px;
-}
+
 section:nth-child(even) /*CSS псевдокласс  :nth-child() находит один или более элементов,
 основываясь на их позиции среди группы соседних элементов. even - чет, odd нечет*/
 {
@@ -285,4 +284,129 @@ header ul li:nth-child(3)
 header ul li:nth-child(4)
 {
   animation-delay: 5.75s;
+}
+.btn
+{
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 20px;
+  color: #205aff;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.btn-color a:nth-child(1)
+{
+  filter: hue-rotate(40deg);
+}
+.btn-color a:nth-child(2)
+{
+  filter: hue-rotate(80deg);
+}
+.btn-color a:nth-child(3)
+{
+  filter: hue-rotate(120deg);
+}
+.btn-color a:nth-child(4)
+{
+  filter: hue-rotate(260deg);
+}
+
+.btn:hover
+{
+  background: #205aff;
+  color: #050801;
+  box-shadow: 0 0 5px #205aff,
+              0 0 25px #205aff,
+              0 0 50px #205aff,
+              0 0 200px #205aff;
+}
+.btn span
+{
+  position: absolute;
+  display: block; /* ? */
+}
+.btn span:nth-child(1)
+{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #205aff);
+  animation: animate1 2s linear infinite;
+}
+@keyframes animate1 {
+  0%
+  {
+    left: -100%;
+  }
+  50%, 100%
+  {
+    left: 100%;
+  }
+}
+.btn span:nth-child(2)
+{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #205aff);
+  animation: animate2 2s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate2 {
+  0%
+  {
+    top: -100%;
+  }
+  50%, 100%
+  {
+    top: 100%;
+  }
+}
+.btn span:nth-child(3)
+{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #205aff);
+  animation: animate3 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate3 {
+  0%
+  {
+    right: -100%;
+  }
+  50%, 100%
+  {
+    right: 100%;
+  }
+}
+.btn span:nth-child(4)
+{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #205aff);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1.5s;
+}
+@keyframes animate4 {
+  0%
+  {
+    bottom: -100%;
+  }
+  50%, 100%
+  {
+    bottom: 100%;
+  }
 }
