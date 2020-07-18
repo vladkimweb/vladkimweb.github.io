@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic');
+
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth; /*плавный скролл при переходе из меню*/
-  font-family: 'Arial', sans-serif;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
 }
 header
 {
@@ -69,25 +71,17 @@ section img
 }
 section h2
 {
+  letter-spacing: 1px;
   font-size: 2.5em;
   text-transform: uppercase;
 }
 section p
 {
   font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 section a
-{
-  outline: none;
-  display: inline-block;
-  padding: 8px 10px;
-  text-decoration: none;
-  font-size: 18px;
-  background: #111;
-  color: #fff;
-  margin-top: 20px;
-}
-#portfolio a
 {
   outline: none;
   display: inline-block;
@@ -98,9 +92,23 @@ section a
   color: #111;
   margin-top: 20px;
 }
+a + a
+{
+  margin-left: 15px;
+}
 section:nth-child(odd) /*CSS псевдокласс  :nth-child() находит один или более элементов,
 основываясь на их позиции среди группы соседних элементов. even - чет, odd нечет*/
 {
   background: #111111;
   color: #ffffff;
+}
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#111, transparent);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(#205aff, transparent);
 }
