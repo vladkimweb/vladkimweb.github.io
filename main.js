@@ -5,7 +5,7 @@ $(document).ready(function () {
       console.log('click')
    })
    $('nav a').click(function () {
-      $('nav a').removeClass("active")
-      $(this).addClass("active")
+      $('nav a').removeClass("menu__item_active")
+      $(this).addClass("menu__item_active")
    })
 })
