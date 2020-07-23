@@ -1,147 +1,459 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic');
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
 
-*
-{
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gTD_u50.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gbD_u50.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gfD_u50.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gTD_u50.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3g3D_u50.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gbD_u50.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gfD_u50.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Old Standard TT Regular"), local("OldStandardTT-Regular"), url(https://fonts.gstatic.com/s/oldstandardtt/v12/MwQubh3o1vLImiwAVvYawgcf2eVep1q4dHc.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Old Standard TT Regular"), local("OldStandardTT-Regular"), url(https://fonts.gstatic.com/s/oldstandardtt/v12/MwQubh3o1vLImiwAVvYawgcf2eVerlq4dHc.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Old Standard TT Regular"), local("OldStandardTT-Regular"), url(https://fonts.gstatic.com/s/oldstandardtt/v12/MwQubh3o1vLImiwAVvYawgcf2eVepVq4dHc.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Old Standard TT Regular"), local("OldStandardTT-Regular"), url(https://fonts.gstatic.com/s/oldstandardtt/v12/MwQubh3o1vLImiwAVvYawgcf2eVepFq4dHc.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Old Standard TT Regular"), local("OldStandardTT-Regular"), url(https://fonts.gstatic.com/s/oldstandardtt/v12/MwQubh3o1vLImiwAVvYawgcf2eVeqlq4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes open {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@keyframes open {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@-webkit-keyframes revealText {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes revealText {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@-webkit-keyframes revealTextReverse {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes revealTextReverse {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth; /*плавный скролл при переходе из меню*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
-header
-{
+
+header {
   position: fixed;
   width: 100%;
-  height: 80px;
-  padding: 0 10%;
+  height: 12%;
+  padding: 0 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #111111;
   z-index: 1000;
 }
-header .logo
-{
-  opacity: 0;
-  animation: fadeIn 0.5s linear forwards;
-  animation-delay: 2s;
 
+header .logo {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s linear forwards;
+          animation: fadeIn 0.5s linear forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   color: #fff;
   font-size: 2em;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 700;
 }
-header ul
-{
-  position: relative;
-  display: flex;
-  transition: 0.5s; /*задержка анимации*/
 
+header .menu-toggle {
+  display: none;
+}
+
+header ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 100;
 }
-header ul li
-{
+
+header ul li {
   position: relative;
   list-style: none;
-
   opacity: 0;
-  animation: fadeInRight 0.5s linear forwards;
+  -webkit-animation: fadeInRight 0.5s linear forwards;
+          animation: fadeInRight 0.5s linear forwards;
 }
-@keyframes fadeInRight
-{
-  0%
-  {
-    transform: translateX(150px);
-    opacity: 0;
-  }
-  100%
-  {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-header ul li a
-{
+
+header ul li a {
   position: relative;
   padding: 5px 10px;
   color: #fff;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-
   font-size: 1.2em;
   letter-spacing: 1px;
 }
-header ul li a.active,
-header ul li a:hover
-{
+
+header ul li a:hover, header ul li a.active {
   background: #205aff;
 }
-.toggle{
-  display: none;
+
+header ul li:nth-child(1) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
-section
-{
+
+header ul li:nth-child(2) {
+  -webkit-animation-delay: 5.25s;
+          animation-delay: 5.25s;
+}
+
+header ul li:nth-child(3) {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+header ul li:nth-child(4) {
+  -webkit-animation-delay: 5.75s;
+          animation-delay: 5.75s;
+}
+
+section {
   width: 100%;
   position: relative;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
-  padding: 150px 10% 100px;
+  padding: 150px 12% 100px;
 }
 
-section h2
-{
-/*  letter-spacing: 1px;*/
+section h2 {
   font-size: 2.5em;
   text-transform: uppercase;
-}
-section p
-{
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 30px;
-}
-section a
-{
-  outline: none;
-  display: inline-block;
-  padding: 8px 10px;
-  text-decoration: none;
-  font-size: 18px;
-  /*
-  background: #fff;
-  */
-  color: #111;
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-section:nth-child(even) /*CSS псевдокласс  :nth-child() находит один или более элементов,
-основываясь на их позиции среди группы соседних элементов. even - чет, odd нечет*/
-{
+section p {
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+section a {
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+}
+
+section:nth-child(even) {
   background: #111111;
   color: #ffffff;
 }
-::-webkit-scrollbar{
-  width: 12px;
-}
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(#111, transparent);
-  border-radius: 6px;
-}
-::-webkit-scrollbar-thumb:hover{
-  background: linear-gradient(#205aff, transparent);
-}
-body
-{
+
+body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
 }
-.open
-{
+
+.open {
   position: fixed;
   top: 0;
   left: 0;
@@ -150,263 +462,142 @@ body
   pointer-events: none;
   z-index: 10000;
 }
-.open .layer
-{
+
+.open .layer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform-origin: top;
-  animation: open 1s ease-in-out forwards;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: open 1s ease-in-out forwards;
+          animation: open 1s ease-in-out forwards;
 }
-.open .layer:nth-child(1)
-{
+
+.open .layer:nth-child(1) {
   background: #000;
   z-index: 2;
 }
-.open .layer:nth-child(2)
-{
+
+.open .layer:nth-child(2) {
   background: #205aff;
-  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   z-index: 1;
 }
-@keyframes open
-{
-  0% {transform: scaleY(1);}
-  100% {transform: scaleY(0);}
-}
-#home
-{
-  /*position: absolute;*/
-  width: 100%;
+
+#home {
   height: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
 }
-.bannerText
-{
+
+.bannerText {
   position: absolute;
   top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
+  left: 12%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   max-width: 800px;
 }
-.bannerText h2,
-.bannerText h3
-{
+
+.bannerText h2 {
   position: relative;
   margin: 0;
   padding: 0;
   display: inline-block;
-  transform-origin: left;
-  transform: scaleX(0);
-  animation: revealTextReverse 1s ease-in-out forwards;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: revealTextReverse 1s ease-in-out forwards;
+          animation: revealTextReverse 1s ease-in-out forwards;
   text-transform: uppercase;
-}
-.bannerText h2
-{
   font-size: 4em;
-  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
-.bannerText h3
-{
-  font-size: 2em;
-  animation-delay: 3s;
-  letter-spacing: 1px;
 
-}
-.bannerText h2:before,
-.bannerText h3:before
-{
-  content: '';
+.bannerText h2:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   background: #000;
   width: 100%;
   height: 100%;
-  transform-origin: right;
-  animation: revealText 1s ease-in-out forwards;
-  animation-delay: 3s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation: revealText 1s ease-in-out forwards;
+          animation: revealText 1s ease-in-out forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
-.bannerText h3:before
-{
-  animation-delay: 4s;
+
+.bannerText h3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: revealTextReverse 1s ease-in-out forwards;
+          animation: revealTextReverse 1s ease-in-out forwards;
+  text-transform: uppercase;
+  font-size: 2em;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  letter-spacing: 1px;
 }
-@keyframes revealText
-{
-  0% {transform: scaleX(1);}
-  100% {transform: scaleX(0);}
+
+.bannerText h3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation: revealText 1s ease-in-out forwards;
+          animation: revealText 1s ease-in-out forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
-@keyframes revealTextReverse
-{
-  0% {transform: scaleX(0);}
-  100% {transform: scaleX(1);}
-}
-.photo
-{
+
+.photo {
   opacity: 0;
   position: absolute;
-  right: 10%;
+  right: 12%;
   top: 50%;
-  transform: translateY(-50%);
-  animation: fadeIn 1s linear forwards;
-  animation-delay: 6s;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-animation: fadeIn 1s linear forwards;
+          animation: fadeIn 1s linear forwards;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
   z-index: 100;
   max-width: 350px;
   border-radius: 20%;
 }
-@keyframes fadeIn
-{
-  0%
-  {
-    opacity: 0;
-  }
-  100%
-  {
-    opacity: 1;
-  }
-}
-header ul li:nth-child(1)
-{
-  animation-delay: 5s;
-}
-header ul li:nth-child(2)
-{
-  animation-delay: 5.25s;
-}
-header ul li:nth-child(3)
-{
-  animation-delay: 5.5s;
-}
-header ul li:nth-child(4)
-{
-  animation-delay: 5.75s;
-}
-.btn
-{
+
+.btn {
   position: relative;
   display: inline-block;
-  padding: 25px 30px;
-  margin: 40px 20px;
+  padding: 10px;
+  margin-right: 20px;
   color: #205aff;
   text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
-  letter-spacing: 2px;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  letter-spacing: 1px;
 }
 
-.btn-color a:nth-child(1)
-{
-  filter: hue-rotate(40deg);
-}
-.btn-color a:nth-child(2)
-{
-  filter: hue-rotate(80deg);
-}
-.btn-color a:nth-child(3)
-{
-  filter: hue-rotate(120deg);
-}
-.btn-color a:nth-child(4)
-{
-  filter: hue-rotate(260deg);
-}
-
-.btn:hover
-{
+.btn:hover {
   background: #205aff;
   color: #050801;
-  box-shadow: 0 0 5px #205aff,
-              0 0 25px #205aff,
-              0 0 50px #205aff,
-              0 0 200px #205aff;
-}
-.btn span
-{
-  position: absolute;
-  display: block; /* ? */
-}
-.btn span:nth-child(1)
-{
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #205aff);
-  animation: animate1 2s linear infinite;
-}
-@keyframes animate1 {
-  0%
-  {
-    left: -100%;
-  }
-  50%, 100%
-  {
-    left: 100%;
-  }
-}
-.btn span:nth-child(2)
-{
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #205aff);
-  animation: animate2 2s linear infinite;
-  animation-delay: 0.5s;
-}
-@keyframes animate2 {
-  0%
-  {
-    top: -100%;
-  }
-  50%, 100%
-  {
-    top: 100%;
-  }
-}
-.btn span:nth-child(3)
-{
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #205aff);
-  animation: animate3 2s linear infinite;
-  animation-delay: 1s;
-}
-@keyframes animate3 {
-  0%
-  {
-    right: -100%;
-  }
-  50%, 100%
-  {
-    right: 100%;
-  }
-}
-.btn span:nth-child(4)
-{
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #205aff);
-  animation: animate4 2s linear infinite;
-  animation-delay: 1.5s;
-}
-@keyframes animate4 {
-  0%
-  {
-    bottom: -100%;
-  }
-  50%, 100%
-  {
-    bottom: 100%;
-  }
 }
