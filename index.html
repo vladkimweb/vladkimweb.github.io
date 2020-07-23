@@ -1,100 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Владислав Ким</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Создание адаптивных кроссбраузерных и мобильных веб-сайтов.">
+   <!-- TODO Должно быть не менее 70ти знаков в теге description-->
+   <title>Владислав Ким. Создание веб-сайтов на заказ.</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
-  <div class="open">
-  <div class="layer"></div>
-  <div class="layer"></div>
-  </div>
-  <header id="header">
-    <a href="#" class="logo">Владислав Ким</a>
-    <ul>
-      <li><a href="#home"  onclick="toggle()">Главная</a></li>
-      <li><a href="#about" onclick="toggle()">Обо мне</a></li>
-      <li><a href="#services" onclick="toggle()">Услуги</a></li>
-      <li><a href="#portfolio" onclick="toggle()">Портфолио</a></li>
-    </ul>
-    <div class="toggle" onclick="toggle()"></div>
-  </header>
-  <section id="home">
-    <div class="bannerText">
-      <h2>Мысли креативно</h2><br>
-      <h3>и делай инновационный дизайн</h3>
-    </div>
-    <img src="img/cat.jpg" class="photo" alt="Фотография">
-  </section>
-  <section id="about">
-    <div>
-      <h2>Обо мне</h2>
-      <p>Начал программировать в 18 лет.</p>
-      <p>Сейчас практикуюсь в вёрстке сайтов на HTML, CSS И JavaScript.</p>
-      <div class="btn-color">
-      <a href="https://www.instagram.com/vladislav.kim0/" class="btn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Instagram</a>
-      <a href="https://vk.com/vladislavyus" class="btn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        VK</a>
-      <a href="mailto:vladis.kim3@gmail.com" class="btn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        E-mail</a>
-      <a href="https://github.com/vladkimweb" class="btn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        GitHub</a>
+   <div class="open">
+      <div class="layer"></div>
+      <div class="layer"></div>
+   </div>
+   <header id="header">
+      <a href="#home" class="logo">Владислав Ким</a>
+      <nav>
+         <ul>
+            <li><a href="#home" class="active">Главная</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+         </ul>
+      </nav>
+      <div class="menu-toggle"></div>
+   </header>
+   <section id="home">
+      <div class="bannerText">
+         <h2>Мысли креативно</h2><br>
+         <h3>и делай инновационный дизайн</h3>
       </div>
-    </div>
-  </section>
-  <section id="services">
-    <div>
-      <h2>Мои услуги</h2>
-      <p>1. Создание кроссплатформенного, адаптивного сайта.</p>
-
-      <p>2. Поддержка сайта.</p>
-    </div>
-  </section>
-  <section id="portfolio">
-    <div class="btn-color">
-      <h2>Моё портфолио</h2>
-      <p>Здесь ты можешь посмотреть на мои работы.</p>
-
-      <a href="https://vladkimweb.github.io/joocha_arts/" class="btn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Joocha Arts
-      </a>
-      <!--<a href="https://vladkimweb.github.io/joocha-arts/">Joocha Arts (лендинг)</a>-->
-    </div>
-  </section>
-
-  <script>
-    function toggle() {
-      let header = document.getElementById('header')
-      header.classList.toggle('active') /*    toggle ( String [, Boolean])
-        Если класс у элемента отсутствует - добавляет, иначе - убирает.
-        Когда вторым параметром передано false - удаляет указанный класс, а если true - добавляет.
-        Если вторым параметром передан undefined или переменная с typeof == 'undefined',
-        поведение будет аналогичным передаче только первого параметра при вызове toggle.*/
-    }
-  </script>
+      <img src="img/cat.jpg" class="photo" alt="Фотография">
+   </section>
+   <section id="about">
+      <div>
+         <h2>Обо мне</h2>
+         <p>Начал программировать в 18 лет.</p>
+         <p>Сейчас практикуюсь в вёрстке сайтов c использованием HTML5, CSS3 (SASS/SCSS) и JavaScript.</p>
+         <div class="btn-color">
+            <a href="https://www.instagram.com/vladislav.kim0/" class="btn">
+               Instagram</a>
+            <a href="https://vk.com/vladislavyus" class="btn">
+               VK</a>
+            <a href="mailto:vladis.kim3@gmail.com" class="btn">
+               E-mail</a>
+            <a href="https://github.com/vladkimweb" class="btn">
+               GitHub</a>
+         </div>
+      </div>
+   </section>
+   <section id="services">
+      <div>
+         <h2>Мои услуги</h2>
+         <p>Создание адаптивных кроссбраузерных и мобильных веб-сайтов.</p>
+         <p>Поддержка сайта.</p>
+      </div>
+   </section>
+   <section id="portfolio">
+      <div class="btn-color">
+         <h2>Моё портфолио</h2>
+         <p>Здесь ты можешь посмотреть на мои работы.</p>
+         <a href="https://vladkimweb.github.io/joocha_arts/" class="btn">
+            Joocha Arts
+         </a>
+         <!-- * Неготовый сайт <a href="https://vladkimweb.github.io/joocha-arts/">Joocha Arts (лендинг)</a>-->
+      </div>
+   </section>
+   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+   <script src="main.js"></script>
 </body>
+
 </html>
