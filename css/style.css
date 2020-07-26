@@ -586,6 +586,7 @@ body {
   transition: 0.5s;
   letter-spacing: 1px;
   width: 150px;
+  margin-bottom: 10px;
   border-radius: 15px;
 }
 
