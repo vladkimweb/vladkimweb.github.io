@@ -6,100 +6,120 @@
       transform: translateX(150px);
       opacity: 0;
    }
+
    100% {
       -webkit-transform: translateX(0);
       transform: translateX(0);
       opacity: 1;
    }
 }
+
 @keyframes fadeInRight {
    0% {
       -webkit-transform: translateX(150px);
       transform: translateX(150px);
       opacity: 0;
    }
+
    100% {
       -webkit-transform: translateX(0);
       transform: translateX(0);
       opacity: 1;
    }
 }
+
 @-webkit-keyframes open {
    0% {
       -webkit-transform: scaleY(1);
       transform: scaleY(1);
    }
+
    100% {
       -webkit-transform: scaleY(0);
       transform: scaleY(0);
    }
 }
+
 @keyframes open {
    0% {
       -webkit-transform: scaleY(1);
       transform: scaleY(1);
    }
+
    100% {
       -webkit-transform: scaleY(0);
       transform: scaleY(0);
    }
 }
+
 @-webkit-keyframes revealText {
    0% {
       -webkit-transform: scaleX(1);
       transform: scaleX(1);
    }
+
    100% {
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
    }
 }
+
 @keyframes revealText {
    0% {
       -webkit-transform: scaleX(1);
       transform: scaleX(1);
    }
+
    100% {
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
    }
 }
+
 @-webkit-keyframes revealTextReverse {
    0% {
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
    }
+
    100% {
       -webkit-transform: scaleX(1);
       transform: scaleX(1);
    }
 }
+
 @keyframes revealTextReverse {
    0% {
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
    }
+
    100% {
       -webkit-transform: scaleX(1);
       transform: scaleX(1);
    }
 }
+
 @-webkit-keyframes fadeIn {
    0% {
       opacity: 0;
    }
+
    100% {
       opacity: 1;
    }
 }
+
 @keyframes fadeIn {
    0% {
       opacity: 0;
    }
+
    100% {
       opacity: 1;
    }
 }
+
 /*-----------------------------*/
 * {
    margin: 0;
@@ -111,6 +131,7 @@
    font-size: 18px;
    font-weight: 400;
 }
+
 header {
    position: fixed;
    width: 100%;
@@ -127,6 +148,7 @@ header {
    align-items: center;
    background: #111111;
    z-index: 1000;
+
    .logo {
       opacity: 0;
       -webkit-animation: fadeIn 0.5s linear forwards;
@@ -139,9 +161,11 @@ header {
       letter-spacing: 2px;
       font-weight: 700;
    }
+
    .menu-toggle {
       display: none;
    }
+
    ul {
       position: relative;
       display: -webkit-box;
@@ -150,6 +174,7 @@ header {
       -webkit-transition: 0.5s;
       transition: 0.5s;
       z-index: 100;
+
       li {
          position: relative;
          list-style: none;
@@ -157,6 +182,7 @@ header {
          -webkit-animation: fadeInRight 0.5s linear forwards;
          animation: fadeInRight 0.5s linear forwards;
          margin-right: 10px;
+
          .menu__item {
             position: relative;
             padding: 5px 10px;
@@ -166,24 +192,29 @@ header {
             cursor: pointer;
             font-size: 1rem;
             letter-spacing: 1px;
+
             &:hover,
             &.menu__item_active {
                border-bottom: 2px solid #205aff;
                transition: 0.12s;
             }
          }
+
          &:nth-child(1) {
             -webkit-animation-delay: 5s;
             animation-delay: 5s;
          }
+
          &:nth-child(2) {
             -webkit-animation-delay: 5.25s;
             animation-delay: 5.25s;
          }
+
          &:nth-child(3) {
             -webkit-animation-delay: 5.5s;
             animation-delay: 5.5s;
          }
+
          &:nth-child(4) {
             -webkit-animation-delay: 5.75s;
             animation-delay: 5.75s;
@@ -192,6 +223,7 @@ header {
       }
    }
 }
+
 section {
    width: 100%;
    position: relative;
@@ -206,32 +238,38 @@ section {
    align-items: center;
    min-height: 100vh;
    padding: 180px 12% 100px;
+
    h2 {
       font-size: 2.5em;
       text-transform: uppercase;
       margin-bottom: 10px;
    }
+
    p {
       letter-spacing: 1px;
       line-height: 24px;
       margin-bottom: 15px;
    }
+
    a {
       outline: none;
       display: inline-block;
       text-decoration: none;
       color: #111;
    }
+
    &:nth-child(even) {
       background: #111111;
       color: #ffffff;
    }
 }
+
 body {
    margin: 0;
    padding: 0;
    min-height: 100vh;
 }
+
 .open {
    position: fixed;
    top: 0;
@@ -240,6 +278,7 @@ body {
    bottom: 0;
    pointer-events: none;
    z-index: 10000;
+
    .layer {
       position: absolute;
       top: 0;
@@ -250,10 +289,12 @@ body {
       transform-origin: top;
       -webkit-animation: open 1s ease-in-out forwards;
       animation: open 1s ease-in-out forwards;
+
       &:nth-child(1) {
          background: #000;
          z-index: 2;
       }
+
       &:nth-child(2) {
          background: #205aff;
          -webkit-animation-delay: 1s;
@@ -262,9 +303,11 @@ body {
       }
    }
 }
+
 .banner__text {
    position: relative;
    display: block;
+
    .text__title {
       display: inline-block;
       -webkit-transform-origin: left;
@@ -277,6 +320,7 @@ body {
       font-size: 48px;
       -webkit-animation-delay: 2s;
       animation-delay: 2s;
+
       &:before {
          content: "";
          position: absolute;
@@ -293,6 +337,7 @@ body {
          animation-delay: 3s;
       }
    }
+
    .text__subtitle {
       display: inline-block;
       -webkit-transform-origin: left;
@@ -306,6 +351,7 @@ body {
       -webkit-animation-delay: 3s;
       animation-delay: 3s;
       letter-spacing: 1px;
+
       &:before {
          content: "";
          position: absolute;
@@ -325,6 +371,7 @@ body {
       }
    }
 }
+
 .banner__img {
    opacity: 0;
    position: relative;
@@ -337,6 +384,7 @@ body {
    max-width: calc(30vw - 50px);
    border-radius: 20%;
 }
+
 .btn {
    position: relative;
    display: inline-block;
@@ -350,7 +398,9 @@ body {
    transition: 0.5s;
    letter-spacing: 1px;
    width: 150px;
+   margin-bottom: 10px;
    border-radius: 15px;
+
    &:hover {
       background: #dd930a;
       color: #050801;
