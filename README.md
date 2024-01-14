@@ -1,2 +1,2 @@
 # vladkimweb.github.io
-vladislavkim.ru
+https://vladkimweb.github.io/
