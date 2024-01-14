@@ -1,90 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Создание адаптивных кроссбраузерных веб-сайтов."
+    />
+    <!-- TODO Должно быть не менее 70ти знаков в теге description-->
+    <title>Vladislav Kim | FrontEnd</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Создание адаптивных кроссбраузерных веб-сайтов.">
-   <!-- TODO Должно быть не менее 70ти знаков в теге description-->
-   <title>Владислав Ким | Начинающий фронтенд</title>
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/media.css">
-</head>
-
-<body>
-   <div class="open">
+  <body>
+    <div class="open">
       <div class="layer"></div>
       <div class="layer"></div>
-   </div>
-   <header>
-      <a href="#" class="logo">Владислав Ким</a>
+    </div>
+    <header>
+      <a href="#" class="logo">Vladislav Kim</a>
       <nav class="menu">
-         <ul>
-            <li><a class="menu__item menu__item_active" href="#banner">Главная</a></li>
-            <li><a class="menu__item" href="#about">Обо мне</a></li>
-            <li><a class="menu__item" href="#services">Услуги</a></li>
-            <li><a class="menu__item" href="#portfolio">Портфолио</a></li>
-         </ul>
+        <ul>
+          <li>
+            <a class="menu__item menu__item_active" href="#banner">Главная</a>
+          </li>
+          <li><a class="menu__item" href="#about">Обо мне</a></li>
+          <li><a class="menu__item" href="#services">Услуги</a></li>
+          <!-- <li><a class="menu__item" href="#portfolio">Портфолио</a></li> -->
+        </ul>
       </nav>
       <div class="menu-toggle"></div>
-   </header>
-   <section id="banner">
+    </header>
+    <section id="banner">
       <div class="banner__text">
-         <span class="text__title">Мысли креативно</span><br>
-         <span class="text__subtitle">и делай инновационный дизайн</span>
+        <span class="text__title">Мысли креативно</span><br />
+        <span class="text__subtitle">и делай инновационный дизайн</span>
       </div>
-      <img class="banner__img" src="img/cat.jpg" alt="Фотография">
-   </section>
-   <section id="about">
+      <img class="banner__img" src="img/cat.jpg" alt="Фотография" />
+    </section>
+    <section id="about">
       <div>
-         <h2>Обо мне</h2>
-         <p>Начал программировать в 18 лет.</p>
-         <p>Мне 20 лет, я начинающий фронтенд-разработчик.
-        Верстка сайтов на HTML, CSS, JS.
-        Знаком с SASS/SCSS, Bootstrap 4, Git, BEM и Gulp. Английский - Intermediate</p>
-         <p>Контакты:</p>
-         <div class="btn-color">
-            <a href="https://www.instagram.com/vladislavkim.dev/" class="btn">
-               Instagram</a>
-            <a href="mailto:vladis.kim5@gmail.com" class="btn">
-               E-mail</a>
-            <a href="https://vk.com/kim_dev" class="btn">
-               VK</a>
-         </div>
+        <h2>Обо мне</h2>
+        <p>Начал программировать в 18 лет.</p>
+        <p>
+          Мне 24 года, я фронтенд-разработчик. Занимаюсь версткой сайтов на
+          HTML, CSS, JS. Знаю SCSS, Bootstrap 5, Git, BEM и Gulp, Webpack.
+        </p>
+        <p>Контакты:</p>
+        <div class="btn-color">
+          <!-- <a href="" class="btn">
+            Instagram</a
+          > -->
+          <a href="mailto:vladis.kim5@gmail.com" class="btn"> E-mail</a>
+          <!-- <a href="https://vk.com/kim_dev" class="btn"> VK</a> -->
+        </div>
       </div>
-   </section>
-   <section id="services">
+    </section>
+    <section id="services">
       <div>
-         <h2>Мои услуги</h2>
-         <p>Создание адаптивных кроссбраузерных веб-сайтов.</p>
-         <p>Поддержка и оптимизация сайта.</p>
-         <!--- DO NOT EDIT - GlobalSign SSL Site Seal Code - DO NOT EDIT --->
-         <table width=125 border=0 cellspacing=0 cellpadding=0
-            title="CLICK TO VERIFY: This site uses a GlobalSign SSL Certificate to secure your personal information.">
-            <tr>
-               <td><span id="ss_img_wrapper_gmogs_image_125-50_en_dblue"><a href="https://www.globalsign.com/"
-                        target=_blank title="GlobalSign Site Seal" rel="nofollow"><img alt="SSL" border=0 id="ss_img"
-                           src="//seal.globalsign.com/SiteSeal/images/gs_noscript_125-50_en.gif"></a></span>
-                  <script type="text/javascript"
-                     src="//seal.globalsign.com/SiteSeal/gmogs_image_125-50_en_dblue.js"></script>
-               </td>
-            </tr>
-         </table>
-         <!--- DO NOT EDIT - GlobalSign SSL Site Seal Code - DO NOT EDIT --->
+        <h2>Мои услуги</h2>
+        <p>Создание адаптивных кроссбраузерных веб-сайтов.</p>
+        <p>Поддержка и оптимизация сайта.</p>
+        <h2>Моё портфолио</h2>
+        <p>Здесь ты можешь посмотреть на мои работы.</p>
+        <a href="http://orbita-triathlon.ru/" class="btn">СК "Орбита"</a>
+        <!--- DO NOT EDIT - GlobalSign SSL Site Seal Code - DO NOT EDIT --->
+        <table
+          width="125"
+          border="0"
+          cellspacing="0"
+          cellpadding="0"
+          title="CLICK TO VERIFY: This site uses a GlobalSign SSL Certificate to secure your personal information."
+        >
+          <tr>
+            <td>
+              <span id="ss_img_wrapper_gmogs_image_125-50_en_dblue"
+                ><a
+                  href="https://www.globalsign.com/"
+                  target="_blank"
+                  title="GlobalSign Site Seal"
+                  rel="nofollow"
+                  ><img
+                    alt="SSL"
+                    border="0"
+                    id="ss_img"
+                    src="//seal.globalsign.com/SiteSeal/images/gs_noscript_125-50_en.gif" /></a
+              ></span>
+              <script
+                type="text/javascript"
+                src="//seal.globalsign.com/SiteSeal/gmogs_image_125-50_en_dblue.js"
+              ></script>
+            </td>
+          </tr>
+        </table>
+        <!--- DO NOT EDIT - GlobalSign SSL Site Seal Code - DO NOT EDIT --->
       </div>
-   </section>
-   <section id="portfolio">
-      <div class="btn-color">
-         <h2>Моё портфолио</h2>
-         <p>Здесь ты можешь посмотреть на мои работы.</p>
-         <a href="http://vladislavkim.ru/joocha_arts/" class="btn">
-            First site</a>
-         <a href="http://vladislavkim.ru/joocha2/" class="btn">Joocha Arts </a> 
-      </div>
-   </section>
-   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"></script>
-   <script src="main.js"></script>
-</body>
-
+    </section>
+    <!-- <section id="portfolio">
+      <div class="btn-color"></div>
+    </section> -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
 </html>
